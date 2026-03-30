@@ -199,12 +199,24 @@
             }
 
             .my_login input {
-                padding: 3px;
+                padding: 7px;
+                border: 1px solid rgb(35, 35, 101);
             }
 
             .my_login {
                 text-align: center;
-                margin: 30px auto;
+                margin: 30px 30px;
+                /* background-color: gray; */
+            }
+
+            @media (max-width: 768px) {
+                .my_login input {
+                    width: 100%;
+                }
+
+                .my_login button {
+                    width: 100%;
+                }
             }
 
             .my_login button {
@@ -218,6 +230,14 @@
         <main class="app-page e-application-landing-page">
 
             <div class="my_login">
+
+                <h4>Login</h4>
+                <br>
+                <p>Login with a username and password is a basic security login</p>
+                <br>
+                <br>
+
+
                 <form id="my_form" method="get" action="3_my_request.html">
                     <div>
                         <label>Username</label> <br>
@@ -228,7 +248,7 @@
                     <br>
                     <div>
                         <label>Password</label> <br>
-                        <input id="password"/>
+                        <input id="password" />
                     </div>
 
                     <br>
